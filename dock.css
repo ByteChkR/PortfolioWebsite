@@ -18,21 +18,19 @@
 
 .Dock ul {
     position: relative;
-	display: inline-block;
-    flex-direction: row;
+	display: inline-flex;
 	padding: 0;
 	margin: 0;
 }
 
 .Dock li {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   vertical-align: baseline;
   box-reflect: below -16px -webkit-gradient(linear, left top, left bottom,from(transparent),color-stop(91%, rgba(255, 255, 255, .1)),color-stop(91.01%, transparent),to(transparent));
 }
 
 .Dock a {
-  position: inline-block;
   font-size: normal 14px/1;
   font-family: Arial, sans-serif;
   display: inline-block;
