@@ -1,0 +1,35 @@
+.ImageTile ul, .TextImageTile ul
+{
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 165, 0, 0);
+}
+
+.ImageTile img
+{
+    position: relative;
+	border: none;
+    transition: width .2s, height .2s;
+}
+
+.ImageTile li
+{
+    position: relative;
+	border: none;
+    transition: width .5s, height .5s;
+}
+
+.ImageTile li:hover img, .ImageTile img:hover
+{
+    width: 100%;
+}
+
+.ImageTile:hover li > img
+{
+    height: 600px;
+}
+

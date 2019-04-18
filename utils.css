@@ -1,0 +1,19 @@
+.CenterAlign
+{
+    text-align: center;
+}
+
+.LeftAlign
+{
+    text-align: left;
+}
+
+.RightAlign
+{
+    text-align: right;
+}
+
+.LeftAlign h1, .RightAlign h1 /*Make Headline still centered*/
+{
+    text-align: center;
+}
