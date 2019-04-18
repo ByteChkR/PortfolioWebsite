@@ -1,0 +1,178 @@
+html
+{
+    background: red;
+    background-image: url(background.png);
+}
+body
+{
+    margin: 0px;
+    background: rgb(1,1,1,0.2);
+}
+
+.tiles ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    display: inline-flex;
+    width: 100%;
+    background-color: rgb(255, 165, 0, 0);
+}
+.tiles li
+{
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(168, 109, 0, 1);
+    opacity: 0.79;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 0px;
+    transition: opacity .5s;
+    outline-color: rgba(0, 255, 29, 0.25);
+    outline-width: 10px;
+    outline-style: solid;
+}
+.tiles li:hover{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.tiles p
+{
+    page-break-after: auto;
+    display: inline-flex;
+    position: relative;
+    flex-direction: column;
+
+}
+
+/* Dock */
+@-webkit-keyframes bounce {
+  0% { transform:translateY(0) }
+  100% { transform:translateY(-10px) }
+}
+
+@-moz-keyframes bounce {
+  0% { transform:translateY(0) }
+  100% { transform:translateY(-10px) }
+}
+
+.dock {
+    
+  top: 0%;
+  z-index: 10;
+  width: 100%;
+  
+  text-align: center;
+  font-size: normal 14px/1;
+  font-family: Arial, sans-serif;
+}
+
+.dock ul {
+	position: relative;
+	display: inline-flex;
+    flex-direction: row;
+	padding: 0;
+	margin: 0;
+}
+
+.dock li {
+    
+  outline-style: none;
+  display: inline-block;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  vertical-align: baseline;
+  box-reflect: below -16px -webkit-gradient(linear, left top, left bottom,from(transparent),color-stop(91%, rgba(255, 255, 255, .1)),color-stop(91.01%, transparent),to(transparent));
+}
+
+.dock a {
+  display: inline-block;
+  cursor: default;
+  outline: none;
+}
+
+.dock li:target a {
+  animation: bounce .3s 6 alternate ease-out
+}
+
+.dock li:after {
+	content: " ";
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(255, 255, 255, .8);
+	margin-left: -2px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(75, 255, 255, .4), 0 0 4px rgba(75, 255, 255, .5), 0 -1px 7px rgb(75, 255, 255);
+  transition: opacity .5s;
+}
+
+.dock li:target:after {
+	visibility: visible;
+	opacity: 1;
+}
+
+.dock em {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	display: none;
+	width: 150px;
+	margin-left: -75px;
+	text-align: center;
+}
+
+.dock em:after {
+	content: " ";
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	margin-left: -6px;
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, .6);
+	border-bottom: none;
+}
+
+.dock em span {
+	padding: 5px 12px;
+	font-size: 14px;
+	font-style: normal;
+	color: #FFF;
+	background: #000;
+	background: rgba(0, 0, 0, .6);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .9);
+	border-radius: 12px;
+}
+
+.dock li:hover em, .dock li a:focus em {
+	display: block;
+}
+
+.dock img {
+	width: 86px;
+	height: auto;
+	border: none;
+    
+  transition: width .2s, height .2s;
+}
+
+.dock li:hover img, .dock li a:focus img {
+	width: 80px;
+}
+
+.dock li:active img {
+	opacity: .9;
+}
