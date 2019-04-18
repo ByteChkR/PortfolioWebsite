@@ -1,6 +1,7 @@
 .ImageTile
 {
     display: inline-block;
+    
 }
 
 .ImageTile ul, .TextImageTile ul
@@ -36,8 +37,9 @@
     height: 100%;
 }
 
-.ImageTile ul:hover li > img
+.ImageTile:hover img
 {
+    width: 50%;
     height: 100%;
 }
 
