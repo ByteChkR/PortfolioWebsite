@@ -1,3 +1,4 @@
+
 html
 {
     background: red;
@@ -17,5 +18,4 @@ body
     flex-direction: column;
     display: inline-block;
     width: 100%;
-    background-color: rgb(255, 165, 0, 0);
 }

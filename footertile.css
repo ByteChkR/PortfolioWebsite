@@ -1,0 +1,37 @@
+.FooterTile
+{
+    display: inline-block;
+    position: relative;
+}
+
+.FooterTile .CopyrightNotice
+{
+    padding: 70px 0px 70px 0px;
+}
+
+.FooterTile h1
+{
+    text-align: center;
+    font-style: italic;
+}
+
+.FooterTile .ContactPanel
+{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 10px 0px 50px 0px;
+    background-color: rgba(168, 109, 0, 1);
+    list-style-type: none;
+}
+
+.FooterTile .ContactPanel img
+{
+    width: 100px;
+    padding: 10px;
+    position: relative;
+    
+}
+
+
+
+

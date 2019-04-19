@@ -1,3 +1,9 @@
+settings
+{
+    --TileBackgroundColor = rgba(168, 109, 0, 1);
+    --TileOutlineColor = rgba(0, 255, 29, 0.25);
+}
+
 .CenterAlign
 {
     text-align: center;
