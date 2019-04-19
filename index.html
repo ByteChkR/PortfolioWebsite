@@ -5,6 +5,7 @@
     </video>
     <title>Portfolio Website</title>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My Website</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="tile.css">
@@ -14,12 +15,46 @@
         <link rel="stylesheet" href="utils.css">
     </head>
     
-    <body>
-        <div class="tiles">
-            <ul class=TileList>
-                <li>
-                    <div class="Tile Dock CenterAlign" id="Home">
-                        <ul>
+    <body onscroll="scrollFunction()">
+        
+        <script>
+
+function scrollFunction() {
+    var dock = document.getElementById('Home');
+    var coll = dock.getElementsByTagName('img');
+    var tilelist = document.getElementById('tilelist');
+    
+    
+    for(var i = 0; i < coll.length; i=i+1)
+        {
+            if(document.scrollingElement.scrollTop > 150)
+            {
+                coll.item(i).style.width = "90px";
+                
+            }
+            else{   
+                coll.item(i).style.width = "150px";
+            }
+            
+        }
+    if(document.scrollingElement.scrollTop > 150)
+    {
+        dock.style.height = "90px";
+        tilelist.style.top = "90px";
+    }
+    else
+    {
+        dock.style.height = "150px";
+        tilelist.style.top = "150px";
+    }
+    dock.style.display = "inline-block";
+    console.info(coll);
+}
+</script>
+
+
+        <div id="Home" class="Tile Dock CenterAlign">
+                        <ul >
                             <li>
                                 <a href="#Home">
                                     <em>
@@ -78,9 +113,11 @@
                             </li>
                         </ul>
                     </div>
-                </li>
+        
+        <div id="tiles" class="tiles">
+            <ul id="tilelist" class="TileList">
                 <li>
-                    <div class="Tile TextImageTile LeftAlign" >
+                    <div class="Tile TextImageTile LeftAlign">
                         <h1 id="About-Me">About Me</h1>
                         <ul>
                             <li>
@@ -164,6 +201,7 @@
                 </li>
             </ul>
         </div>
+
     </body>
 </html>
 
