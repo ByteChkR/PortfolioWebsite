@@ -5,7 +5,7 @@
 {
     
     position: fixed;
-    height: 150px;
+    height: 120px;
 }
 
 .Dock {
@@ -77,15 +77,16 @@
 }
 
 .Dock img {
-	width: 150px;
+	width: 120px;
+    padding: 0px;
 	height: auto;
 	border: none;
-    
-  transition: width .2s, height .2s;
+    transition: width .2s, height .2s;
 }
 
 .Dock li:hover img, .dock li a:focus img {
-	width: 140px;
+	width: 100px;
+    padding: 10px;
 }
 
 .Dock li:active img {

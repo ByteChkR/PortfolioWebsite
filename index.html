@@ -27,28 +27,26 @@ function scrollFunction() {
     
     for(var i = 0; i < coll.length; i=i+1)
         {
-            if(document.scrollingElement.scrollTop > 150)
+            if(document.scrollingElement.scrollTop > 120)
             {
                 coll.item(i).style.width = "90px";
                 
             }
             else{   
-                coll.item(i).style.width = "150px";
+                coll.item(i).style.width = "120px";
             }
             
         }
-    if(document.scrollingElement.scrollTop > 150)
+    if(document.scrollingElement.scrollTop > 120)
     {
         dock.style.height = "90px";
         tilelist.style.top = "90px";
     }
     else
     {
-        dock.style.height = "150px";
-        tilelist.style.top = "150px";
+        dock.style.height = "120px";
+        tilelist.style.top = "120px";
     }
-    dock.style.display = "inline-block";
-    console.info(coll);
 }
 </script>
 
