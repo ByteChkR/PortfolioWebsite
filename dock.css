@@ -1,14 +1,6 @@
 
 /* Dock */
-@-webkit-keyframes bounce {
-  0% { transform:translateY(0) }
-  100% { transform:translateY(-10px) }
-}
 
-@-moz-keyframes bounce {
-  0% { transform:translateY(0) }
-  100% { transform:translateY(-10px) }
-}
 
 .Dock {
     display: inline-block;
@@ -38,30 +30,7 @@
   outline: none;
 }
 
-.Dock li:target a {
-  animation: bounce .3s 6 alternate ease-out
-}
 
-.Dock li:after {
-	content: " ";
-	position: absolute;
-	bottom: -5px;
-	left: 50%;
-	width: 5px;
-	height: 5px;
-	opacity: 0;
-	visibility: hidden;
-	background-color: rgba(255, 255, 255, .8);
-	margin-left: -2px;
-  border-radius: 5px;
-  box-shadow: inset 0 1px 3px rgba(75, 255, 255, .4), 0 0 4px rgba(75, 255, 255, .5), 0 -1px 7px rgb(75, 255, 255);
-  transition: opacity .5s;
-}
-
-.Dock li:target:after {
-	visibility: visible;
-	opacity: 1;
-}
 
 .Dock em {
 	position: absolute;
