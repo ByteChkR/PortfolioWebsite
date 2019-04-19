@@ -13,12 +13,19 @@
     padding: 0px;
 }
 
+.TextImageTile img
+{
+    padding: 10px;
+}
+
 .ImageTile img
 {
     position: relative;
 	border: none;
     transition: width .2s, height .2s;
 }
+
+
 
 .ImageTile li
 {

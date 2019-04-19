@@ -87,7 +87,9 @@
 }
 
 .Dock em span {
+    
 	padding: 5px 12px;
+    display: block;
 	font-size: 14px;
 	font-style: normal;
 	color: #FFF;
