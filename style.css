@@ -1,4 +1,27 @@
 
+/* A link that has not been visited */
+a:link {
+    color: red;
+    text-decoration: underline;
+}
+
+/* A link that has been visited */
+a:visited {
+    color: red;
+}
+
+/* A link that is hovered on */
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* A link that is selected */
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+
 
 #bgvid
 {
@@ -12,7 +35,7 @@
 html
 {
     min-width: 850px;
-    
+    min-height: 400px;
 }
 body
 {
